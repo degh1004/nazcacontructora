@@ -1574,7 +1574,10 @@ Counters Sec
 
 
 .clr-blue{
-    background: #161922;
+    background: url("../img/bubbles.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .rotate-left-none{
     transform: rotate(1deg);
