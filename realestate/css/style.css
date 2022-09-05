@@ -2164,6 +2164,10 @@ Feedback Area CSS
     height: 418px;
 }
 
+.footer {
+    background-color: #2A2A29;
+}
+
 .map {
     background: url("../img/map.jpg");
 }
