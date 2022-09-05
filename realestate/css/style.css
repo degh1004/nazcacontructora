@@ -2284,20 +2284,19 @@ Feedback Area CSS
 /*================================================
 Go Top CSS
 =================================================*/
-.go-top {
+.go-top-fix {
     position: fixed;
     cursor: pointer;
     bottom: 15px;
     right: 15px;
     color: #ffffff;
-    background-color: #A47E3B;
+    background-color: #25d366;
     z-index: 4;
     width: 40px;
     text-align: center;
     height: 42px;
     line-height: 42px;
     opacity: 0;
-    visibility: hidden;
     -webkit-transition: .9s;
     -o-transition: .9s;
     transition: .9s;
@@ -2306,72 +2305,24 @@ Go Top CSS
     transform: translateY(150px);
 }
 
-.go-top.active {
-    -webkit-animation: bounceInDown 2s;
-    animation: bounceInDown 2s;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
+.go-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 100%;
+    background-color: #25d366;
+    z-index: 1000;
+    text-align: center;
 }
 
 .go-top i {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 40px;
 }
 
-.go-top i:last-child {
-    opacity: 0;
-    visibility: hidden;
-    top: 60%;
-}
 
-.go-top::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: #161922;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
 
-.go-top:hover, .go-top:focus {
-    color: #ffffff;
-}
-
-.go-top:hover::before, .go-top:focus::before {
-    opacity: 1;
-    visibility: visible;
-}
-
-.go-top:hover i:first-child, .go-top:focus i:first-child {
-    opacity: 0;
-    top: 0;
-    visibility: hidden;
-}
-
-.go-top:hover i:last-child, .go-top:focus i:last-child {
-    opacity: 1;
-    visibility: visible;
-    top: 50%;
-}
 
 
 /*=====================================
