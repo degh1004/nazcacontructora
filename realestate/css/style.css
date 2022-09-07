@@ -3137,6 +3137,9 @@ form.findus textarea {
 
 @media screen and (max-width: 991px) {
 
+    .index-1 {
+        background-size: cover;
+    }
 
     .center-about {
         text-align: center;
@@ -3375,11 +3378,18 @@ form.findus textarea {
         margin-right: auto;
         margin-left: auto;
     }
+    .index-1 {
+        background-size: cover;
+    }
 
 
 }
 
 @media screen and (max-width: 575px) {
+
+    .index-1 {
+        background-size: cover;
+    }
     #team-carousel .owl-dots {
         top: 88%;
         -webkit-transform: translateX(1%);
